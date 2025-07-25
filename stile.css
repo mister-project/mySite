@@ -1,0 +1,92 @@
+/*Удаляем отступы по умолчанию во всем документе*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*прокрутка будет не впритык к секции, а не доходя до нее 40px:*/
+:target {
+    scroll-margin-top: 40px;
+}
+
+/*Делаем плавную прокрутку при переходе по ссылкам на якоря*/
+html {
+    scroll-behavior: smooth;
+}
+#img_logo {
+    width: 80%;
+    max-width: 200px;
+    height: 230px;
+
+    transform: rotate(1.75turn);
+    background: linear-gradient(90deg, red, blue);
+
+}
+
+.container0 {
+    display: flex;
+    /*горизонтальное выравнивание*/
+    justify-content: center;
+}
+
+.container1 {
+    border: 3px solid red;
+    height: 3831px;
+    width: 1184px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+
+    @media (max-width: 1024px) {
+        flex-direction: column
+    }
+}
+
+.container2 {
+    border: 3px solid green;
+    position: sticky;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+    max-height: 500px;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    top: 0px;
+    width: 557.797px;
+    @media (max-width: 1024px) {
+        position: static;
+        width: 100%;
+    }
+}
+
+.container3 {
+    border: 3px solid blue;
+    box-sizing: border-box;
+    display: block;
+    height: 3865.81px;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    width: 603.25px;
+    @media (max-width: 1024px) {
+
+        width: 100%;
+    }
+}
+#aboutme {
+    /*прокрутка будет не впритык к секции, а не доходя до нее 30px:*/
+    /*scroll-margin-top: 30px;*/
+}
+/*отследим переход по якорю и подсветить пользователю какой-то блок или еще что-то:*/
+#aboutme:target {
+    color: purple;
+}
+#experience {
+
+    /*scroll-margin-top: 30px;*/
+}
+
+
+
+
