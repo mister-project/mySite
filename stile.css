@@ -12,6 +12,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 section {
     margin-top: 30px;
 }
@@ -52,13 +53,33 @@ section {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    max-height: 391px;
+    padding-bottom: 96px;
+    padding-top: 50px;
+    top: 0px;
+    width: 560px;
+    @media (max-width: 1024px) {
+        position: static;
+        width: 100%;
+    }
+
+}
+
+
+.container20 {
+
+    position: sticky;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
     height: 500px;
     justify-content: space-between;
     max-height: 500px;
     padding-bottom: 96px;
     padding-top: 96px;
-    top: 0px;
-    width: 557.797px;
+
+    width: 557px;
     @media (max-width: 1024px) {
         position: static;
         width: 100%;
@@ -69,10 +90,10 @@ section {
     border: 3px solid blue;
     box-sizing: border-box;
     display: block;
-    height: 3865.81px;
+    height: 3865px;
     padding-bottom: 96px;
     padding-top: 96px;
-    width: 603.25px;
+    width: 603px;
     @media (max-width: 1024px) {
 
         width: 100%;
@@ -81,6 +102,7 @@ section {
 .projects_container {
     display: flex;
     justify-content: normal;
+    align-content: center;
 
     border: 3px solid yellow;
     margin-top: 20px;
@@ -92,9 +114,16 @@ section {
 }
 .video_description {
 
-    width: 140px;
-    height: 79px;
+    width: 250px;
+    height: 150px;
     border: 3px solid #319e31;
+    @media (max-width: 1024px) {
+        width: auto;
+        height: 100%;
+        align-content: center;
+
+
+    }
 }
 .rest_description {
 
@@ -102,12 +131,9 @@ section {
     height: auto;
     border: 3px solid blue;
 }
-#aboutme {
-    /*прокрутка будет не впритык к секции, а не доходя до нее 30px:*/
-    /*scroll-margin-top: 30px;*/
-}
+
 /*отследим переход по якорю и подсветить пользователю какой-то блок или еще что-то:*/
-#aboutme:target {
+#about:target {
     color: purple;
 }
 #experience {
