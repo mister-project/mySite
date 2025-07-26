@@ -12,6 +12,10 @@
 html {
     scroll-behavior: smooth;
 }
+section {
+    margin-top: 30px;
+}
+
 #img_logo {
     width: 80%;
     max-width: 200px;
@@ -73,6 +77,30 @@ html {
 
         width: 100%;
     }
+}
+.projects_container {
+    display: flex;
+    justify-content: normal;
+
+    border: 3px solid yellow;
+    margin-top: 20px;
+    @media (max-width: 1024px) {
+
+        flex-direction: column-reverse
+
+    }
+}
+.video_description {
+
+    width: 140px;
+    height: 79px;
+    border: 3px solid #319e31;
+}
+.rest_description {
+
+    width: 100%;
+    height: auto;
+    border: 3px solid blue;
 }
 #aboutme {
     /*прокрутка будет не впритык к секции, а не доходя до нее 30px:*/
