@@ -8,14 +8,12 @@ const getDataCv = (object) => {
 const dataCv = JSON.parse(localStorage.getItem(object.nameObjects));
 dataCv.forEach(el => {
 
-    const projectsContainer = document.querySelector('.projects_container');
+    const projectsContainer = document.querySelector('.project_stack');
     console.log(el["nameProject"])
     const projectUnit = document.createElement('div')
 
     projectsContainer.appendChild(projectUnit);
     projectUnit.innerText = el["nameProject"];
-
-
 
 })
 }

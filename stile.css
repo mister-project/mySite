@@ -22,9 +22,12 @@ section {
     max-width: 200px;
     height: 230px;
 
-    transform: rotate(1.75turn);
-    background: linear-gradient(90deg, red, blue);
 
+    border-radius: 50%;
+}
+.around {
+    transform: rotate(1.5turn);
+    background: linear-gradient(90deg, red, blue);
 }
 
 .container0 {
